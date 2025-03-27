@@ -1,0 +1,24 @@
+### Test POST request
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "kuchingneko",
+  "password": "123",
+  "role"    : "admin"
+}
+
+### Test POST request
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "kuchingneko",
+  "password": "123"
+}
+
+### Test GET request
+GET http://localhost:3000/users?username=neko
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5la28iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDMwOTExMzcsImV4cCI6MTc0MzA5NDczN30.tBqSEM2SoGdvgmgdgysF-g2JJ-FjUZN39SJh0nKmibI
+
